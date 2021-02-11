@@ -17,5 +17,5 @@ def generate_challenge(flag):
     assert m < n, f"{m} {n}"
     c = pow(m, e, n)
 
-    with open("reasonably_straightforward_attack.txt", 'w') as f:
+    with open("reasonably_simple_attack.txt", 'w') as f:
         f.write(f"n={n}\ne={e}\nc={c}\n")

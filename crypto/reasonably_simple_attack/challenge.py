@@ -18,7 +18,7 @@ def generate_challenge(flag):
     assert m < n, f"{m} {n}"
     c = pow(m, e, n)
 
-    with open("reasonably_straightforward_attack.txt", 'w') as f:
+    with open("reasonably_simple_attack.txt", 'w') as f:
         f.write(f"n={n}\ne={e}\nc={c}\n")
 
 
@@ -29,4 +29,4 @@ class Problem(Challenge):
 
     def setup(self):
         generate_challenge(self.flag)
-        self.files = [File("reasonably_straightforward_attack.txt"), File("reasonably_straightforward_attack.py")]
+        self.files = [File("reasonably_simple_attack.txt"), File("reasonably_simple_attack.py")]
