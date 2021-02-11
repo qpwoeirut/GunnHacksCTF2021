@@ -25,7 +25,7 @@ def generate_challenge(flag):
 class Problem(Challenge):
     def generate_flag(self, random):
         hexdigits = hex(random.randrange(16 ** 8))[2:]
-        return "gunnHacks{sm0l_e_" + hexdigits + "}"
+        return "gunnHacks{sm0l_e}"
 
     def setup(self):
         generate_challenge(self.flag)
