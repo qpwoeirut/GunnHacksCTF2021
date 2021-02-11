@@ -15,5 +15,5 @@ def generate_challenge(flag):
     table = str.maketrans(hex_chars, shuffled)
     ciphertext = encoded.translate(table)
 
-    with open("sub2.txt", 'w') as f:
+    with open("substitution2.txt", 'w') as f:
         f.write(ciphertext + '\n')

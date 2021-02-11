@@ -6,3 +6,5 @@ class Problem(Challenge):
 
     def generate_flag(self, random):
         return "gunnHacks{geotags}"
+    def setup(self):
+        print("pepega")

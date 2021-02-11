@@ -31,7 +31,7 @@ def generate_challenge(flag):
     table = str.maketrans(chars, shuffled)
     ciphertext = message.translate(table)
 
-    with open("sub.txt", 'w') as f:
+    with open("substitution.txt", 'w') as f:
         f.write(ciphertext + '\n')
 
 class Problem(Challenge):
