@@ -3,7 +3,7 @@
   "category": "Cryptography",
   "description": "What do all of these {{url_for(\"really_strange_algorithm.txt\", display=\"letters\")}} mean?",
   "score" : 50,
-  "hints": ["https://en.wikipedia.org/wiki/RSA_(cryptosystem)#Operation", "You can use python's `int.to_bytes` to convert a number to bytes. The message is in big endian."],
+  "hints": ["https://en.wikipedia.org/wiki/RSA_(cryptosystem)#Operation", "You can use python's int.to_bytes to convert a number to bytes. The message is in big endian.", "Calculating modular inverse with python: https://stackoverflow.com/questions/4798654/modular-multiplicative-inverse-function-in-python"],
   "author": "Stanley Zhong",
   "organization": "GunnHacks",
   "event": "GunnHacks 7.0 CTF",
