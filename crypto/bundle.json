@@ -4,51 +4,51 @@
 "description": "Cryptography challenges for GunnHacks CTF",
 "dependencies":
 {
-  "rsa-2-baf0853": {
+  "a-reasonably-simple-attack-0c22bb4": {
     "threshold": 1,
     "weightmap": {
-      "rsa-1-429f9b4": 1
+      "a-really-strange-algorithm-f3c5ddc": 1
     }
   },
-  "rsa-3-6be1103": {
+  "a-rather-small-apparatus-2fb8a1a": {
     "threshold" : 1,
     "weightmap": {
-      "rsa-2-baf0853": 1
+      "a-reasonably-simple-attack-0c22bb4": 1
     }
   },
-  "rsa-4-4050f93": {
+  "a-rational-security-adjustment-7b5cd90": {
     "threshold" : 1,
     "weightmap": {
-      "rsa-2-baf0853": 1
+      "a-reasonably-simple-attack-0c22bb4": 1
     }
   },
-  "rsa-5-b17f12c": {
+  "repeated-message-dc143f2": {
     "threshold" : 1,
     "weightmap": {
-      "rsa-2-baf0853": 1
+      "a-reasonably-simple-attack-0c22bb4": 1
     }
   },
-  "bases-8868b66": {
+  "bases-b682213": {
     "threshold" : 0,
     "weightmap": {
     }
   },
-  "substitution-cipher-bf39b42": {
+  "substitution-9834034": {
     "threshold" : 1,
     "weightmap": {
-      "rsa-2-baf0853": 1
+      "a-reasonably-simple-attack-0c22bb4": 1
     }
   },
-  "substitution-cipher-2-2641bd1": {
+  "substitution-2-6202656": {
     "threshold" : 1,
     "weightmap": {
-      "substitution-cipher-bf39b42": 1
+      "substitution-9834034": 1
     }
   },
-"prime-store-c741bc6": {
+"prime-store-cafe66d": {
     "threshold" : 1,
     "weightmap": {
-      "rsa-2-baf0853": 1
+      "a-reasonably-simple-attack-0c22bb4": 1
     }
   }
 }
