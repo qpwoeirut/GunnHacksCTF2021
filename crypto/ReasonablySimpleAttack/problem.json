@@ -1,7 +1,7 @@
 {
-  "name": "Reasonably Straightforward Attack",
+  "name": "A Reasonably Simple Attack",
   "category": "Cryptography",
-  "description": "Let's start off with the most straightforward RSA attack... Try decrypting this {{url_for(\"reasonably_straightforward_attack.txt\")}}. Here's the code used to generate the encryption: {{url_for(\"reasonably_straightforward_attack.py\")}}",
+  "description": "Let's start off with the most straightforward RSA attack... Try decrypting this {{url_for(\"reasonably_simple_attack.txt\")}}. Here's the code used to generate the encryption: {{url_for(\"reasonably_simple_attack.py\")}}",
   "score": 100,
   "hints": ["What missing information do we need to decrypt the message? How could we obtain that information?", "How big can `q` be?"],
   "author": "Stanley Zhong",

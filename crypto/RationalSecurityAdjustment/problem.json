@@ -1,0 +1,12 @@
+{
+  "name": "A Rational Security Adjustment",
+  "category": "Cryptography",
+  "description": "I tried encoding each character of my {{url_for(\"rational_security_adjustment.txt\", display=\"message\")}} with RSA to make sure every single character is secure! Here's the code I used to do it: {{url_for(\"rational_security_adjustment.py\")}}",
+  "score": 200,
+  "hints": ["https://en.wikipedia.org/wiki/Chosen-ciphertext_attack"],
+  "author": "Stanley Zhong",
+  "organization": "GunnHacks",
+  "event": "GunnHacks 7.0 CTF",
+  "pip_requirements": ["pycrypto"],
+  "pip_python_version": "3"
+}

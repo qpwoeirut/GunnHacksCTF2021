@@ -6,7 +6,7 @@
   "hints": [],
   "author": "chop0",
   "organization": "GunnHacks",
-  "event": "GunnHacks CTF",
+  "event": "GunnHacks 7.0 CTF",
   "pip_requirements": ["pycrypto"],
   "pip_python_version": "3"
 }

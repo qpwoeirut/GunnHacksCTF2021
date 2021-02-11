@@ -1,10 +1,10 @@
 {
   "name": "Bases",
   "category": "Misc",
-  "description": "Let's start off with a {{url_for(\"bases.txt\", display=\"base-ic\")}} warmup!",
+  "description": "Let's start off with a {{url_for(\"bases.txt\", display=\"base-ic\")}} challenge!",
   "score" : 50,
   "hints": ["Try searching online for ASCII, hex encoding, and base64 encoding."],
   "author": "Stanley Zhong",
-  "organization": "Gunn High School",
-  "event": "GunnHacks CTF"
+  "organization": "GunnHacks",
+  "event": "GunnHacks 7.0 CTF"
 }

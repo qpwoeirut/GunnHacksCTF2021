@@ -1,6 +1,4 @@
 from hacksport.problem import Challenge, File
-
-
 from Crypto.Util.number import getPrime
 
 
