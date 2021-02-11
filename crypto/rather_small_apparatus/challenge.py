@@ -9,7 +9,7 @@ def generate_challenge(flag):
     p = getPrime(1024)
     q = getPrime(1024)
 
-    e = 0x11
+    e = 13
     while gcd(e, (p - 1) * (q - 1)) != 1:
         p = getPrime(1024)
         q = getPrime(1024)
@@ -24,7 +24,7 @@ def generate_challenge(flag):
 
 class Problem(Challenge):
     def generate_flag(self, random):
-        return "gunnHacks{sm0l_e}"
+        return "gunnHacks{sm0l_e!}"
 
     def setup(self):
         generate_challenge(self.flag)
