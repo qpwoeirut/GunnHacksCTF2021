@@ -1,4 +1,4 @@
-from hacksport.problem import Challenge, File
+from hacksport.problem import Challenge
 
 
 class Problem(Challenge):
