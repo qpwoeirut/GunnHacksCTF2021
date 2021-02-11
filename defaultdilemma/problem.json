@@ -2,10 +2,10 @@
   "name": "Default Dilemma",
   "category": "Web Exploitation",
   "description": "There is a website running at <a href='http://{{server}}:{{port}}'>http://{{server}}:{{port}}</a>. Try to see if you can find the flag!",
-  "score" : 40,
+  "score" : 50,
   "hints": [],
   "author": "chop0",
   "organization": "GunnHacks",
-  "event": "GunnHacks CTF",
+  "event": "GunnHacks 7.0 CTF",
   "dont_template": ["webroot/assets/"]
 }

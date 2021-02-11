@@ -15,7 +15,7 @@ For example, this CTF has a standard flag format of gunnHacks{flag}, so you can 
 
 There are online decoders that can break a straightforward substitution cipher, like guballa.de/substitution-solver and quipqiup.com.
 However, those won't (or at least shouldn't) work for the next substitution cipher challenge.
-It might be helpful to use Python though, to speed up some parts of the cipher-breaking.""" +
+It might be helpful to use Python though, to speed up some parts of the cipher-breaking. """ +
 
 f"Here's your flag: {flag}").strip().replace('\n', ' ').replace('  ', ' ')
 

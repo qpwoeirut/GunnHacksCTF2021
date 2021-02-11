@@ -2,7 +2,7 @@
   "name": "Prime Store",
   "category": "Cryptography",
   "description": "I’ve devised a revolutionary new method for RSA key generation. Instead of spending precious time computing huge prime factors, why not precompute them, store them in a file, and choose them at random when needed? To prove how secure this is, I’ve made the code available to you and even put an implementation of it on a public server. If you can manage to exploit the server and decrypt its ciphertext, send it to me and I’ll give you a reward.\n<pre>nc {{host}} {{port}}</pre>",
-  "score" : 40,
+  "score" : 400,
   "hints": [],
   "author": "chop0",
   "organization": "GunnHacks",

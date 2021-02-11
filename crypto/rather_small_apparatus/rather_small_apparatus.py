@@ -8,7 +8,7 @@ def generate_challenge(flag):
     p = getPrime(1024)
     q = getPrime(1024)
 
-    e = 0x11
+    e = 13
     while gcd(e, (p - 1) * (q - 1)) != 1:
         p = getPrime(1024)
         q = getPrime(1024)

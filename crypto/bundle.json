@@ -1,7 +1,7 @@
 {
 "name": "Cryptography",
 "author": "Stanley Zhong",
-"description": "Cryptography challenges for GunnHacks CTF",
+"description": "Cryptography challenges for GunnHacks 7.0 CTF",
 "dependencies":
 {
   "a-reasonably-simple-attack-0c22bb4": {
@@ -36,7 +36,6 @@
   "substitution-9834034": {
     "threshold" : 1,
     "weightmap": {
-      "a-reasonably-simple-attack-0c22bb4": 1
     }
   },
   "substitution-2-6202656": {
@@ -45,7 +44,7 @@
       "substitution-9834034": 1
     }
   },
-"prime-store-cafe66d": {
+  "prime-store-cafe66d": {
     "threshold" : 1,
     "weightmap": {
       "a-reasonably-simple-attack-0c22bb4": 1
