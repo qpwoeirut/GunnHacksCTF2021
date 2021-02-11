@@ -41,4 +41,4 @@ class Problem(Challenge):
 
     def setup(self):
         generate_challenge(self.flag)
-        self.files = [File("sub.txt")]
+        self.files = [File("substitution.txt")]

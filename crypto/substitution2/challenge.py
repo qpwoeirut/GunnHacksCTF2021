@@ -28,7 +28,7 @@ def generate_challenge(flag):
     table = str.maketrans(hex_chars, shuffled)
     ciphertext = encoded.translate(table)
 
-    with open("sub2.txt", 'w') as f:
+    with open("substitution2.txt", 'w') as f:
         f.write(ciphertext + '\n')
 
 
@@ -40,4 +40,4 @@ class Problem(Challenge):
 
     def setup(self):
         generate_challenge(self.flag)
-        self.files = [File("sub2.txt"), File("sub2.py")]
+        self.files = [File("substitution2.txt"), File("substitution2.py")]
