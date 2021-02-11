@@ -1,5 +1,4 @@
 from hacksport.problem import Challenge, File
-
 from math import gcd
 from Crypto.Util.number import getPrime
 
@@ -22,6 +21,7 @@ def generate_challenge(flag):
     with open("rsa2.txt", 'w') as f:
         f.write(f"n={n}\ne={e}\nc={c}\n")
 
+
 class Problem(Challenge):
     def generate_flag(self, random):
         hexdigits = hex(random.randrange(16 ** 8))[2:]
@@ -29,4 +29,4 @@ class Problem(Challenge):
 
     def setup(self):
         generate_challenge(self.flag)
-        self.files = [File("rsa2.txt"), File("rsa2.py")]
+        self.files = [File("reasonably_straightforward_attack.txt"), File("reasonably_straightforward_attack.py")]

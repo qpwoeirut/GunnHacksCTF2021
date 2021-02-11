@@ -1,0 +1,12 @@
+{
+  "name": "A Reasonably Straightforward Attack",
+  "category": "Cryptography",
+  "description": "Let's start off with the most straightforward RSA attack... Try decrypting this {{url_for(\"reasonably_straightforward_attack.txt\")}}. Here's the code used to generate the encryption: {{url_for(\"reasonably_straightforward_attack.py\")}}",
+  "score": 100,
+  "hints": ["What missing information do we need to decrypt the message? How could we obtain that information?", "How big can `q` be?"],
+  "author": "Stanley Zhong",
+  "organization": "GunnHacks",
+  "event": "GunnHacks 7.0 CTF",
+  "pip_requirements": ["pycrypto"],
+  "pip_python_version": "3"
+}

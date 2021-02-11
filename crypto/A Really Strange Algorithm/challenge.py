@@ -2,6 +2,7 @@ from hacksport.problem import Challenge, File
 from math import gcd
 from Crypto.Util.number import getPrime
 
+
 def generate_challenge(flag):
     m = int.from_bytes(flag.encode(), "big")
 
@@ -19,6 +20,7 @@ def generate_challenge(flag):
 
     with open("really_strange_algorithm.txt", 'w') as f:
         f.write(f"p={p}\nq={q}\nn={n}\ne={e}\nc={c}\n")
+
 
 class Problem(Challenge):
     def generate_flag(self, random):

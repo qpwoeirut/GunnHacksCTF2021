@@ -1,5 +1,4 @@
 from hacksport.problem import Challenge, File
-
 from math import gcd
 from Crypto.Util.number import getPrime
 
@@ -19,14 +18,14 @@ def generate_challenge(flag):
     assert m < n, f"{m} {n}"
     c = pow(m, e, n)
 
-    with open("rsa3.txt", 'w') as f:
+    with open("rather_small_apparatus.txt", 'w') as f:
         f.write(f"n={n}\ne={e}\nc={c}\n")
+
 
 class Problem(Challenge):
     def generate_flag(self, random):
-        hexdigits = hex(random.randrange(16 ** 8))[2:]
         return "gunnHacks{sm0l_e}"
 
     def setup(self):
         generate_challenge(self.flag)
-        self.files = [File("rsa3.txt"), File("rsa3.py")]
+        self.files = [File("rather_small_apparatus.txt"), File("rather_small_apparatus.py")]

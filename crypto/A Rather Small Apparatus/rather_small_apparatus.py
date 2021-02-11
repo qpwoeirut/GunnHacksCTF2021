@@ -17,5 +17,5 @@ def generate_challenge(flag):
     assert m < n, f"{m} {n}"
     c = pow(m, e, n)
 
-    with open("rsa3.txt", 'w') as f:
+    with open("rather_small_apparatus.txt", 'w') as f:
         f.write(f"n={n}\ne={e}\nc={c}\n")

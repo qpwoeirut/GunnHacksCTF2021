@@ -1,0 +1,12 @@
+{
+  "name": "A Rather Small Apparatus",
+  "category": "Cryptography",
+  "description": "Something seems a bit small {{url_for(\"rather_small_apparatus.txt\", display=\"here\")}}... Source code at {{url_for(\"rather_small_apparatus.py\")}}",
+  "score": 200,
+  "hints": ["Check out the value of `e`. How might this break the RSA system?"],
+  "author": "Stanley Zhong",
+  "organization": "GunnHacks",
+  "event": "GunnHacks 7.0 CTF",
+  "pip_requirements": ["pycrypto"],
+  "pip_python_version": "3"
+}

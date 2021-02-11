@@ -5,8 +5,8 @@
   "score" : 50,
   "hints": ["https://en.wikipedia.org/wiki/RSA_(cryptosystem)#Operation", "You can use python's `int.to_bytes` to convert a number to bytes. The message is in big endian."],
   "author": "Stanley Zhong",
-  "organization": "Gunn High School",
-  "event": "GunnHacks CTF",
+  "organization": "GunnHacks",
+  "event": "GunnHacks 7.0 CTF",
   "pip_requirements": ["pycrypto"],
   "pip_python_version": "3"
 }
