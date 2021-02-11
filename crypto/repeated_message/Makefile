@@ -1,2 +1,2 @@
 all:
-	shell_manager install .
+	shell_manager install . --reinstall
