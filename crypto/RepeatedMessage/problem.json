@@ -1,12 +1,12 @@
 {
-  "name": "RSA 5",
+  "name": "Repeated Message",
   "category": "Cryptography",
   "description": "I'm giving out 100 free encrypted messages! Try to decrypt and guess my message!\n<pre>nc {{host}} {{port}}</pre>",
   "score": 400,
   "hints": [],
   "author": "Stanley Zhong",
-  "organization": "Gunn High School",
-  "event": "GunnHacks CTF",
+  "organization": "GunnHacks",
+  "event": "GunnHacks 7.0 CTF",
   "pip_requirements": ["pycrypto"],
   "pip_python_version": "3"
 }

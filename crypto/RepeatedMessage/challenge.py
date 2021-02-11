@@ -1,8 +1,8 @@
 from hacksport.problem import Remote, File, ProtectedFile
 
 class Problem(Remote):
-    program_name = "rsa5.py"
-    files = [File("rsa5.py"), ProtectedFile("flag.txt")]
+    program_name = "repeated_message.py"
+    files = [File("repeated_message.py"), ProtectedFile("flag.txt")]
 
     def generate_flag(self, random):
         hexdigits = hex(random.randrange(16 ** 8))[2:]
