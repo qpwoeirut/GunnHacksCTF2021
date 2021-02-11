@@ -13,7 +13,7 @@ def generate_challenge(flag):
     for char in flag:
         c.append(pow(ord(char), e, n))
 
-    with open("rsa4.txt", 'w') as f:
+    with open("rational_security_adjustment.txt", 'w') as f:
         f.write(f"n={n}\ne={e}\nc={c}\n")
 
 class Problem(Challenge):
