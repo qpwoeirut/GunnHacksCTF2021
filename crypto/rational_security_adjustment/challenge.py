@@ -23,4 +23,4 @@ class Problem(Challenge):
 
     def setup(self):
         generate_challenge(self.flag)
-        self.files = [File("rsa4.txt"), File("rsa4.py")]
+        self.files = [File("rational_security_adjustment.txt"), File("rational_security_adjustment.py")]
