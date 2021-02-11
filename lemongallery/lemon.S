@@ -7,13 +7,9 @@
     .globl syscall1, syscall2, syscall3, syscall4, syscall5
 
     _start:
-           mov eax, 13
-           push eax
-           mov ebx, esp
-           int 0x80
-           pop eax
+           rdtsc
            xor edx,edx
-           mov ecx,1024
+           mov ecx,10000
            div ecx
            mov eax,edx
 
