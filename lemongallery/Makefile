@@ -1,2 +1,3 @@
 all:
-	gcc -z execstack -fno-stack-protector -no-pie -m32 main.c -o lemongallery
+	gcc -s -z execstack -fno-stack-protector -no-pie -m32 main.c lemon.S -o lemongallery -nostdlib -masm=intel
+	strip lemongallery
