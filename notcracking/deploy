@@ -1,3 +1,0 @@
-#!/bin/bash
-sudo shell_manager deploy not-brute-force-43f7e30 -n 5 -f "gunnHacks{b3tter_th@n_n0de_%s}"
-

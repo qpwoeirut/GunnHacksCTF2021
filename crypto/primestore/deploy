@@ -1,2 +1,0 @@
-#!/bin/bash
-shell_manager deploy prime-store-c741bc6 -f gunnHacks{fact0red_m0du1us_%s} -n 3

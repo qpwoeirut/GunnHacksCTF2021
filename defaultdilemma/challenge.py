@@ -2,6 +2,9 @@ from hacksport.problem import PHPApp, PreTemplatedFile, files_from_directory
 
 
 class Problem(PHPApp):
+  def generate_flag(self, random):
+      hexdigits = hex(random.randrange(16 ** 8))[2:]
+      return "gunnHacks{f0und_it_" + hexdigits + '}'
   files = files_from_directory("webroot/")
   PreTemplatedFile("assets/img/portfolio/safe.png")
   PreTemplatedFile("assets/img/portfolio/game.png")

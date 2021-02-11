@@ -1,3 +1,0 @@
-#!/bin/bash
-sudo shell_manager deploy default-dilemma-b484ec9 -n 5 -f "gunnHacks{f0und_1t_%s}"
-
