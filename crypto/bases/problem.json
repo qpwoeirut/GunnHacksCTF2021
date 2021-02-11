@@ -1,0 +1,10 @@
+{
+  "name": "Bases",
+  "category": "Misc",
+  "description": "Let's start off with a {{url_for(\"bases.txt\", display=\"base-ic\")}} warmup!",
+  "score" : 50,
+  "hints": ["Try searching online for ASCII, hex encoding, and base64 encoding."],
+  "author": "Stanley Zhong",
+  "organization": "Gunn High School",
+  "event": "GunnHacks CTF"
+}

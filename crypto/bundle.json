@@ -1,0 +1,55 @@
+{
+"name": "Cryptography",
+"author": "Stanley Zhong",
+"description": "Cryptography challenges for GunnHacks CTF",
+"dependencies":
+{
+  "rsa-2-baf0853": {
+    "threshold": 1,
+    "weightmap": {
+      "rsa-1-429f9b4": 1
+    }
+  },
+  "rsa-3-6be1103": {
+    "threshold" : 1,
+    "weightmap": {
+      "rsa-2-baf0853": 1
+    }
+  },
+  "rsa-4-4050f93": {
+    "threshold" : 1,
+    "weightmap": {
+      "rsa-2-baf0853": 1
+    }
+  },
+  "rsa-5-b17f12c": {
+    "threshold" : 1,
+    "weightmap": {
+      "rsa-2-baf0853": 1
+    }
+  },
+  "bases-8868b66": {
+    "threshold" : 0,
+    "weightmap": {
+    }
+  },
+  "substitution-cipher-bf39b42": {
+    "threshold" : 1,
+    "weightmap": {
+      "rsa-2-baf0853": 1
+    }
+  },
+  "substitution-cipher-2-2641bd1": {
+    "threshold" : 1,
+    "weightmap": {
+      "substitution-cipher-bf39b42": 1
+    }
+  },
+"prime-store-c741bc6": {
+    "threshold" : 1,
+    "weightmap": {
+      "rsa-2-baf0853": 1
+    }
+  }
+}
+}

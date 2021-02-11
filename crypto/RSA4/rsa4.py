@@ -1,23 +1,16 @@
-from sympy import randprime
+from Crypto.Util.number import getPrime
 
-flag = int.from_bytes(b"GHCTF{sm0l_e}", "big")
 
-P2 = 868
-p = randprime(2 ** P2, 2 ** (P2 + 1))
-q = randprime(2 ** P2, 2 ** (P2 + 1))
-n = p * q
+def generate_challenge(flag):
+    p = getPrime(1024)
+    q = getPrime(1024)
+    n = p * q
 
-e = 2**4 + 1
+    e = 0x10001
 
-assert pow(flag, e) < n, f"{pow(flag, e)} {n}"
-c = pow(flag, e, n)
+    c = []
+    for char in flag:
+        c.append(pow(ord(char), e, n))
 
-print("n =", n)
-print("e =", e)
-print("c =", c)
-
-print("\n\n" + '-' * 50 + "testing:" + '-' * 50)
-from utils.rsa.rsa_util import plaintext_pq
-from utils.basics import hex_to_ascii
-assert plaintext_pq(c, e, p, q) == flag
-print(hex_to_ascii(plaintext_pq(c, e, p, q)))
+    with open("rsa4.txt", 'w') as f:
+        f.write(f"n={n}\ne={e}\nc={c}\n")

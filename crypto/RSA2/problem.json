@@ -1,0 +1,12 @@
+{
+  "name": "RSA 2",
+  "category": "Cryptography",
+  "description": "Let's start off with the most straightforward RSA attack... Try decrypting this {{url_for(\"rsa2.txt\", display=\"rsa2.txt\")}}. Here's the code used to generate the encryption: {{url_for(\"rsa2.py\", display=\"rsa2.py\")}}",
+  "score": 100,
+  "hints": ["What missing information do we need to decrypt the message? How could we obtain that information?", "How big can `q` be?"],
+  "author": "Stanley Zhong",
+  "organization": "Gunn High School",
+  "event": "GunnHacks CTF",
+  "pip_requirements": ["pycrypto"],
+  "pip_python_version": "3"
+}

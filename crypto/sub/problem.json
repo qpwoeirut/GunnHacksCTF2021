@@ -1,0 +1,10 @@
+{
+  "name": "Substitution Cipher",
+  "category": "Cryptography",
+  "description": "Try breaking this {{url_for(\"sub.txt\", display=\"substitution cipher\")}}!",
+  "score": 100,
+  "hints": ["https://en.wikipedia.org/wiki/Substitution_cipher#Security_for_simple_substitution_ciphers"],
+  "author": "Stanley Zhong",
+  "organization": "Gunn High School",
+  "event": "GunnHacks CTF"
+}
