@@ -1,5 +1,5 @@
 {
-  "name": "A Reasonably Straightforward Attack",
+  "name": "Reasonably Straightforward Attack",
   "category": "Cryptography",
   "description": "Let's start off with the most straightforward RSA attack... Try decrypting this {{url_for(\"reasonably_straightforward_attack.txt\")}}. Here's the code used to generate the encryption: {{url_for(\"reasonably_straightforward_attack.py\")}}",
   "score": 100,
