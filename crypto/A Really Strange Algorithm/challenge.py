@@ -17,7 +17,7 @@ def generate_challenge(flag):
     assert m < n, f"{m} {n}"
     c = pow(m, e, n)
 
-    with open("rsa1.txt", 'w') as f:
+    with open("really_strange_algorithm.txt", 'w') as f:
         f.write(f"p={p}\nq={q}\nn={n}\ne={e}\nc={c}\n")
 
 class Problem(Challenge):
@@ -27,4 +27,4 @@ class Problem(Challenge):
 
     def setup(self):
         generate_challenge(self.flag)
-        self.files = [File("rsa1.txt")]
+        self.files = [File("really_strange_algorithm.txt")]
