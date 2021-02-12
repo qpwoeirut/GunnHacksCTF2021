@@ -1,0 +1,10 @@
+{
+  "name": "lemon gallery",
+  "category": "Binary Exploitation",
+  "description": "the lemons have revolted in the lemon gallery due to abysmal working conditions and forced labour. they've put up a {{url_for(\"lemongallery\", display=\"blockade\")}} which seems almost inpenetrable; i can't even find the libc version! connect with <code>nc {{server}} {{port}}</code>.",
+  "score" : 500,
+  "hints": [],
+  "author": "chop0",
+  "organization": "GunnHacks",
+  "event": "GunnHacks 7.0 CTF"
+}
