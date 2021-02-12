@@ -1,4 +1,4 @@
-from hacksport.problem import Remote, File, ProtectedFile
+from hacksport.problem import Remote
 
 class Problem(Remote):
     program_name = "intro_to_netcat.py"

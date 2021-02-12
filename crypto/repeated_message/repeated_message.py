@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from math import gcd
 from Crypto.Util.number import getPrime
 
