@@ -1,0 +1,12 @@
+{
+  "name": "Intro to Netcat",
+  "category": "Misc",
+  "description": "Some of the challenges in the CTF will require you to connect to a server via netcat. Connect to <pre>{{host}}</pre> at port <pre>{{port}}</pre> to get the flag!",
+  "score": 50,
+  "hints": ["Try looking for tutorials on the <pre>nc</pre> command."],
+  "author": "Stanley Zhong",
+  "organization": "GunnHacks",
+  "event": "GunnHacks 7.0 CTF",
+  "pip_requirements": ["pycrypto"],
+  "pip_python_version": "3"
+}
