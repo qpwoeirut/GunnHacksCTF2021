@@ -4,7 +4,7 @@
   "description": "I took a walk around my neighborhood last week, and I took some photos. Unfortunately, most of them are of the sidewalk (I'm a really terrible photographer), so now I don't know where I went! For each photo, can you find me the first letter of the street it was taken on? (The first photo was at a school, so use the first letter of the short school name.) If you can find the streets, the letters should spell out a word, which you can submit as gunnHacks{the_word}. Make sure to submit the word in lowercase. Here are the photos I took: {{url_for(\"img.zip\")}}}",
   "score" : 300,
   "hints": ["What school is hosting this event? I took a walk around that area.", "The visual content of the images don't matter for this challenge. You don't need any knowledge of Palo Alto sidewalks to solve this challenge.", "What other data do image files store, besides the visual image itself?"],
-  "author": "qpwoeirut",
+  "author": "Stanley Zhong",
   "organization": "GunnHacks",
   "event": "GunnHacks 7.0 CTF"
 }
