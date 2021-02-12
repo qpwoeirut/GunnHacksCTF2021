@@ -1,0 +1,10 @@
+{
+  "name": "citrus union",
+  "category": "Binary Exploitation",
+  "description": "the lemons have formed a labour {{url_for(\"citrusunion\", display=\"union\")}} with many other types of citrus fruits; exploiting them for labour or juice will now require many techniques, due to their collective bargaining skills. connect with <code>nc {{server}} {{port}}</code>.",
+  "score" : 600,
+  "hints": [],
+  "author": "chop0",
+  "organization": "GunnHacks",
+  "event": "GunnHacks 7.0 CTF"
+}
