@@ -1,7 +1,7 @@
 {
   "name": "Repeated Message",
   "category": "Cryptography",
-  "description": "I'm giving out 100 free encrypted messages! Try to decrypt and guess my message!\n<pre>nc {{host}} {{port}}</pre>",
+  "description": "I'm giving out 100 free encrypted messages! Try to decrypt and guess my message!\n<code>nc {{server}} {{port}}</code>",
   "score": 400,
   "hints": [],
   "author": "Stanley Zhong",
