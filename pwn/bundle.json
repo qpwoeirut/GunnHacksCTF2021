@@ -1,0 +1,14 @@
+{
+"name": "Binary Exploitation",
+"author": "Alec Petridis",
+"description": "Pwn challenges for GunnHacks 7.0 CTF",
+"dependencies":
+{
+  "citrus-union-dcb3184": {
+    "threshold": 1,
+    "weightmap": {
+      "lemon-gallery-8dff669": 1
+    }
+  }
+}
+}
