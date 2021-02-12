@@ -1,5 +1,4 @@
 #include "syscalls.h"
-char* fuckyougcc = "pepega";
 char* lemon = "\xff\xe1";
 
 void vuln() {
