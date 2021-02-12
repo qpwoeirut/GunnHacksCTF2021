@@ -9,7 +9,7 @@ In this cipher, the text is converted to numbers before being enciphered.
 We can still apply the same techniques though.
 In fact, if you did both challenges without any online decoders and have some knowledge of ASCII, this challenge might
 have been a bit easier than the first.
-We know the most common character will be a space, so that gets us two of the ten characters of the mapping.
+We know the most common character will be a space, so that gets us two of the sixteen characters of the mapping.
 We can also be fairly certain that most of the message will be lowercase letters, which are all in a certain numeric range.
 This helps eliminate unlikely options.
 
