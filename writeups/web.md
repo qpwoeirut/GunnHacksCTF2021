@@ -1,6 +1,11 @@
 # GunnHacks 7.0 CTF Web Challenge Writeups
 
 ## Default Dilemma
+Points: 50
+> There is a website running at http://shell.ctf.gunnhacks.com:56923. Try to see if you can find the flag!
+
+(Note that the above URL might not get you a flag that your account can submit -- try to use the URL on the website).
+
 The first thing of interest is a contact form, but a quick check of the Inspect Element Network tab shows that nothing is being sent.
 While we're here, let's take a look at the HTML of the page. There's something which sticks out:
 ```html
@@ -10,6 +15,10 @@ Going to `/flag.html` gets us the flag.
 
 
 ## not-brute-force
+> There is a website running at http://shell.ctf.gunnhacks.com:59144. Try to see if you can find the flag!
+
+(Note that the above URL might not get you a flag that your account can submit -- try to use the URL on the website).
+
 We get a php source file to look at.
 ```php
 <?php
