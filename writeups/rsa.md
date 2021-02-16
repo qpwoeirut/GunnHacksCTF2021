@@ -72,8 +72,35 @@ Let's say we have one key where `n1 = p * q1` and another where `n2 = p * q2`.
 Since `n1` and `n2` share a common factor, we can recover `p` by calculating `gcd(n1, n2)`.
 Finding the value of `p` will allow us to decrypt the flag.
 
-(Will add script soon)
+If you know how to use pwntools, this can be automated.
+If not, you can manually copy-paste in the numbers.
+The number of unique primes is small enough that you won't need to copy many numbers.
+```python
+from math import gcd
+from pwn import remote
 
+n_list = set()
+done = False
+while not done:
+    r = remote(host, port)  # these differ between challenge instances
+    n = int(r.recvline().decode().split(':')[1])
+    e = int(r.recvline().decode().split(':')[1])
+    c = int(r.recvline().decode().split(':')[1])
+
+    for other_n in n_list:
+        if n == other_n:
+            continue
+        if gcd(n, other_n) > 1:
+            p = gcd(n, other_n)
+            q = n // p
+
+            d = pow(e, -1, (p-1) * (q-1))
+            m = pow(c, e, n)
+            print(m.to_bytes(50, 'big'))
+
+            done = True
+            break
+```
 
 ## Repeated Message
 This is vulnerable to [Håstad's broadcast attack](https://en.wikipedia.org/wiki/Coppersmith%27s_attack#H%C3%A5stad's_broadcast_attack).
