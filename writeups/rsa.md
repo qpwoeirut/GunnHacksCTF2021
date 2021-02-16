@@ -108,4 +108,57 @@ The linked article has a more formal explanation, but the idea of Håstad's broa
 This ends up with a combined ciphertext `C`, which will be equal to m<sup>e</sup>.
 Then we can take the `e`-th root in the same way we did for the `Rather Small Apparatus` challenge.
 
-(Will add script soon)
+```python
+from functools import reduce
+from pwn import remote
+
+r = remote(host, port)  # these differ between challenge instances
+r.recvline()
+
+n_list = []
+c_list = []
+
+e = 0x11
+for i in range(e):
+    r.recvline()
+    r.recvline()
+    r.sendline('1')
+    n_list.append(int(r.recvline().decode().split('=')[1]))
+    r.recvline()
+    c_list.append(int(r.recvline().decode().split('=')[1]))
+
+
+# https://rosettacode.org/wiki/Chinese_remainder_theorem#Python
+def chinese_remainder(n, a):
+    sum = 0
+    prod = reduce(lambda a, b: a * b, n)
+    for n_i, a_i in zip(n, a):
+        p = prod // n_i
+        sum += a_i * mul_inv(p, n_i) * p
+    return sum % prod
+
+
+def mul_inv(a, b):
+    b0 = b
+    x0, x1 = 0, 1
+    if b == 1: return 1
+    while a > 1:
+        q = a // b
+        a, b = b, a % b
+        x0, x1 = x1 - q * x0, x0
+    if x1 < 0: x1 += b0
+    return x1
+
+
+c = chinese_remainder(n_list, c_list)
+lo, hi = 0, c
+while lo < hi:
+    mid = (lo + hi) // 2
+    if pow(mid, e) < c:
+        lo = mid + 1
+    elif pow(mid, e) > c:
+        hi = mid - 1
+    else:
+        lo = mid
+print(lo.to_bytes(20, 'big'))
+```
